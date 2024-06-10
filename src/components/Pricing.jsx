@@ -3,17 +3,10 @@ import React from "react";
 const Pricing = () => {
   return (
     <div>
-      <div
-        className="flex flex-col justify-center items-center py-16"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
+      <div className="flex flex-col justify-center items-center py-16">
         <h1 className=" text-[30px] md:text-[32px] roboto-slab-thin pb-8">
-        Pricing
-      </h1>
+          Pricing
+        </h1>
         <div className="w-11/12 lg:w-9/12 h-full bg-white rounded-3xl  shadow-gray-600 shadow-xl px-4 py-8">
           <ul className="grid grid-cols-2 py-1">
             <li className="text-xl pt-4 pb-4 pl-4 text-left">
