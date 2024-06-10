@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import img from "../assets/goldResize.jpg";
 import img2 from "../assets/limeFlowersResize2.jpg";
 import img3 from "../assets/purpleResize.jpg";
@@ -7,12 +9,12 @@ import img5 from "../assets/lime.jpg";
 import img6 from "../assets/orange.jpg";
 import img7 from "../assets/purpleRock.jpg";
 import img8 from "../assets/rainbow.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const openImage = (src) => {
     window.open(src, "_blank");
   };
