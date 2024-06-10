@@ -9,6 +9,11 @@ const Pricing = () => {
     <div>
       <div
         className="flex flex-col justify-center items-center py-16"
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
       >
         <h1 className=" text-[30px] md:text-[32px] roboto-slab-thin pb-8">
           Pricing
