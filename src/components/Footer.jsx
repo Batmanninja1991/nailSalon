@@ -1,13 +1,21 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiOutlineTrademark } from "react-icons/ai";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init();
 
 const Footer = () => {
   return (
     <div className="w-full h-full bg-black text-pink-200">
-      <div>
+      <div
+        data-aos="flip-left"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
         <div className="py-6">
           <h1 className="flex justify-center items-center text-[40px] font-mono tracking-tighter">
             Contact Us
