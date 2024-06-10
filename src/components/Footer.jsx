@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="w-full h-full bg-black text-pink-200">
       <div
       >
-        <div className="py-6">
+        <div className="py-6 twist">
           <h1 className="flex justify-center items-center text-[40px] font-mono tracking-tighter">
             Contact Us
           </h1>
@@ -15,19 +15,19 @@ const Footer = () => {
             <a target="_blank" href="https://facebook.com/">
               <FaFacebook
                 size={60}
-                className="text-blue-600 hover:text-blue-500 twist"
+                className="text-blue-600 hover:text-blue-500 hover:scale-125"
               />
             </a>
             <a target="_blank" href="https://instagram.com/mintnailzstudio">
               <FaInstagram
                 size={60}
-                className="text-red-500 hover:text-red-400 twist"
+                className="text-red-500 hover:text-red-400 hover:scale-125"
               />
             </a>
             <a target="_blank" href="https://twitter.com/">
               <FaTwitter
                 size={60}
-                className="text-blue-500 hover:text-blue-400 twist"
+                className="text-blue-500 hover:text-blue-400 hover:scale-125"
               />
             </a>
           </div>

@@ -1,20 +1,9 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
 
 const Pricing = () => {
   return (
     <div>
-      <div
-        className="flex flex-col justify-center items-center py-16"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
+      <div className="flex flex-col justify-center items-center py-16">
         <h1 className=" text-[30px] md:text-[32px] roboto-slab-thin pb-8">
           Pricing
         </h1>

@@ -7,10 +7,6 @@ import img5 from "../assets/lime.jpg";
 import img6 from "../assets/orange.jpg";
 import img7 from "../assets/purpleRock.jpg";
 import img8 from "../assets/rainbow.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
 
 const Hero = () => {
   const openImage = (src) => {
@@ -21,11 +17,6 @@ const Hero = () => {
     <div className="w-full h-full flex justify-center pt-10">
       <div
         className="flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 gap-4 p-6"
-        data-aos="zoom-in"
-        data-aos-offset="200"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
       >
         <img
           src={img}
