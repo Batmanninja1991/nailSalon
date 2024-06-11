@@ -43,7 +43,7 @@ const Navbar = () => {
             className="md:hidden"
           />
         )}
-        <h1 className="md:hidden text-pink-400 text-[42px] text-center caveat">
+        <h1 className="md:hidden text-pink-400 text-[38px] text-center caveat">
           Mint Nails Studio
         </h1>
         <ul className="hidden md:flex gap-2 md:text-[18px] roboto-slab-thin">
