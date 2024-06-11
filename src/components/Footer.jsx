@@ -5,13 +5,15 @@ import { AiOutlineTrademark } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="w-full h-full bg-black text-pink-200">
-      <div
-      >
+      <div>
         <div className="py-6 twist">
           <h1 className="flex justify-center items-center text-[40px] font-mono tracking-tighter">
             Contact Us
           </h1>
-          <div className="flex justify-center items-center gap-8 py-6">
+          <div
+            id="contact"
+            className="flex justify-center items-center gap-8 py-6"
+          >
             <a target="_blank" href="https://facebook.com/">
               <FaFacebook
                 size={60}
@@ -36,18 +38,21 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center text-xl gap-16 py-16 font-medium font-mono tracking-tighter">
           <a
             href="https://www.google.com/maps"
+            target="_blank"
             className="hover:underline transition-all duration-200 delay-75 hover:scale-125"
           >
             <p>1234 Main St.</p>
           </a>
           <a
             href="tel:503-999-9999"
+            target="_blank"
             className="hover:underline transition-all duration-200 delay-75 hover:scale-125"
           >
             <p>503-999-9999</p>
           </a>
           <a
             href="mailto:YourEmail@gmail.com"
+            target="_blank"
             className="hover:underline transition-all duration-200 delay-75 hover:scale-125"
           >
             <p>YourEmail@gmail.com</p>
