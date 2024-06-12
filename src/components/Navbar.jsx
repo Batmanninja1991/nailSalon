@@ -40,7 +40,7 @@ const Navbar = () => {
     const message = encodeURIComponent(
       `Hello, my name is ${formData.name}. I would like to book a ${formData.service} service. You can contact me at ${formData.phone} or ${formData.email}.`
     );
-    return `https://www.instagram.com/direct/new/?text=${message}`;
+    return `instagram://user?username=mintnailzstudio`;
   };
 
   const handleFormSubmit = (e) => {
@@ -50,7 +50,7 @@ const Navbar = () => {
 
   const handleInstagramMessage = (e) => {
     e.preventDefault();
-    window.open(generateInstagramLink(), "_blank");
+    window.location.href = generateInstagramLink();
   };
 
   return (
