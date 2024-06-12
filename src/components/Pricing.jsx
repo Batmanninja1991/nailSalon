@@ -3,7 +3,10 @@ import React from "react";
 const Pricing = () => {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center py-16">
+      <div
+        id="prices"
+        className="flex flex-col justify-center items-center py-16"
+      >
         <h1 className=" text-[30px] md:text-[32px] roboto-slab-thin pb-8">
           Pricing
         </h1>
@@ -40,7 +43,7 @@ const Pricing = () => {
           </ul>
           <ul className="grid grid-cols-2 py-1">
             <li className="text-xl pt-4 pb-4 pl-4 text-left">
-              Ombre Full Set
+              Custom Full Set
               <div className="w-full border-b-2 border-black border-dotted"></div>
             </li>
             <li className="text-xl pt-4 pb-4 pr-4 pl-[1px] text-right">

@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-full flex justify-center pt-10">
+    <div id="gallery" className="w-full h-full flex justify-center pt-10">
       <div
         className="flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 gap-4 p-6"
       >

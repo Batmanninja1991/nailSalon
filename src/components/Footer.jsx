@@ -39,21 +39,21 @@ const Footer = () => {
           <a
             href="https://www.google.com/maps"
             target="_blank"
-            className="hover:underline transition-all duration-200 delay-75 hover:scale-125"
+            className="hover:text-white"
           >
             <p>1234 Main St.</p>
           </a>
           <a
             href="tel:503-999-9999"
             target="_blank"
-            className="hover:underline transition-all duration-200 delay-75 hover:scale-125"
+            className="hover:text-white"
           >
             <p>503-999-9999</p>
           </a>
           <a
             href="mailto:YourEmail@gmail.com"
             target="_blank"
-            className="hover:underline transition-all duration-200 delay-75 hover:scale-125"
+            className="hover:text-white"
           >
             <p>YourEmail@gmail.com</p>
           </a>
