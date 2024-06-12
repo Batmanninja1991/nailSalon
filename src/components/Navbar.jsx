@@ -36,21 +36,19 @@ const Navbar = () => {
     return `mailto:davidshaw68@gmail.com?subject=${subject}&body=${body}`;
   };
 
-  const generateInstagramLink = () => {
-    const message = encodeURIComponent(
-      `Hello, my name is ${formData.name}. I would like to book a ${formData.service} service. You can contact me at ${formData.phone} or ${formData.email}.`
-    );
-    return `instagram://user?username=mintnailzstudio`;
-  };
-
   const handleFormSubmit = (e) => {
     e.preventDefault();
     window.location.href = generateMailtoLink();
   };
 
-  const handleInstagramMessage = (e) => {
+  const openInstagramApp = (e) => {
     e.preventDefault();
-    window.location.href = generateInstagramLink();
+    window.location.href = "instagram://user?username=mintnailzstudio";
+  };
+
+  const openInstagramWeb = (e) => {
+    e.preventDefault();
+    window.open("https://www.instagram.com/mintnailzstudio", "_blank");
   };
 
   return (
@@ -202,12 +200,20 @@ const Navbar = () => {
                 Book Appointment
               </button>
             </form>
-            <button
-              onClick={handleInstagramMessage}
-              className="mt-4 flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600"
-            >
-              <FaInstagram className="mr-2" /> Or DM me
-            </button>
+            <div className="mt-4 flex justify-between">
+              <button
+                onClick={openInstagramApp}
+                className="flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 mr-2"
+              >
+                <FaInstagram className="mr-2" /> Open in App
+              </button>
+              <button
+                onClick={openInstagramWeb}
+                className="flex items-center justify-center w-full px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 ml-2"
+              >
+                <FaInstagram className="mr-2" /> Open in Web
+              </button>
+            </div>
             <button
               onClick={() => setShowModal(false)}
               className="mt-4 px-4 py-2 bg-gray-300 text-black rounded hover:bg-gray-400"
