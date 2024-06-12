@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -35,9 +36,21 @@ const Navbar = () => {
     return `mailto:davidshaw68@gmail.com?subject=${subject}&body=${body}`;
   };
 
+  const generateInstagramLink = () => {
+    const message = encodeURIComponent(
+      `Hello, my name is ${formData.name}. I would like to book a ${formData.service} service. You can contact me at ${formData.phone} or ${formData.email}.`
+    );
+    return `https://www.instagram.com/direct/new/?text=${message}`;
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     window.location.href = generateMailtoLink();
+  };
+
+  const handleInstagramMessage = (e) => {
+    e.preventDefault();
+    window.open(generateInstagramLink(), "_blank");
   };
 
   return (
@@ -186,9 +199,15 @@ const Navbar = () => {
                 type="submit"
                 className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
               >
-                Submit
+                Book Appointment
               </button>
             </form>
+            <button
+              onClick={handleInstagramMessage}
+              className="mt-4 flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600"
+            >
+              <FaInstagram className="mr-2" /> Or DM me
+            </button>
             <button
               onClick={() => setShowModal(false)}
               className="mt-4 px-4 py-2 bg-gray-300 text-black rounded hover:bg-gray-400"
