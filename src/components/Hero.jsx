@@ -15,55 +15,53 @@ const Hero = () => {
 
   return (
     <div id="gallery" className="w-full h-full flex justify-center pt-10">
-      <div
-        className="flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 gap-4 p-6"
-      >
+      <div className="flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 gap-4 p-6">
         <img
           src={img}
           onClick={() => openImage(img)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Gold Nails"
         />
         <img
           src={img2}
           onClick={() => openImage(img2)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Lime Flowers"
         />
         <img
           src={img3}
           onClick={() => openImage(img3)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Purple"
         />
         <img
           src={img4}
           onClick={() => openImage(img4)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="White Flowers"
         />
         <img
           src={img5}
           onClick={() => openImage(img5)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Lime"
         />
         <img
           src={img6}
           onClick={() => openImage(img6)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Orange"
         />
         <img
           src={img7}
           onClick={() => openImage(img7)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Purple Rock"
         />
         <img
           src={img8}
           onClick={() => openImage(img8)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 hover:scale-105 transition-transform duration-300 cursor-pointer"
+          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Rainbow"
         />
       </div>
