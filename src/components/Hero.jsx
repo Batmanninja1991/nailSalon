@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative w-full h-screen flex justify-center items-center text-center pt-10 bg-center bg-no-repeat bg-cover"
+      className="relative w-full h-screen flex justify-center items-center text-center pt-10 bg-center bg-fixed bg-cover"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
       <div className="w-11/12 md:w-2/3 lg:w-1/2 relative z-10 text-white flex flex-col p-4">
         <h1 className="text-5xl font-bold -translate-y-16 animate-fade-in-down">
-          Welcome to Mint Nails Studio
+          Welcome to <br/>Mint Nails Studio
         </h1>
       </div>
     </div>
