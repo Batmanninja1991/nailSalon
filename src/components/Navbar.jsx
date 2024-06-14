@@ -100,28 +100,28 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed top-[100px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-transform duration-300 z-50 ${
+        className={`fixed top-[100px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-transform duration-500 z-50 ${
           openMenu ? "transform translate-x-0" : "transform -translate-x-full"
         }`}
       >
-        <ul className="flex flex-col p-6">
+        <ul className="flex flex-col items-center gap-6 p-6">
           <a href="#">
-            <li onClick={handleCloseMenu} className="py-2">
+            <li onClick={handleCloseMenu} className="py-2 hover:underline">
               Home
             </li>
           </a>
           <a href="#gallery">
-            <li onClick={handleCloseMenu} className="py-2">
+            <li onClick={handleCloseMenu} className="py-2 hover:underline">
               Gallery
             </li>
           </a>
           <a href="#prices">
-            <li onClick={handleCloseMenu} className="py-2">
+            <li onClick={handleCloseMenu} className="py-2 hover:underline">
               Prices
             </li>
           </a>
           <a href="#contact">
-            <li onClick={handleCloseMenu} className="py-2">
+            <li onClick={handleCloseMenu} className="py-2 hover:underline">
               Contact Us
             </li>
           </a>
