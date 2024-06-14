@@ -26,7 +26,6 @@ const Hero = () => {
       id="hero"
       className="relative w-full h-screen flex justify-center items-center text-center pt-10 bg-center bg-cover"
       style={{
-        backgroundAttachment: 'fixed',
         backgroundImage: `url(${bgImage})`,
       }}
     >
