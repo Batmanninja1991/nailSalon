@@ -1,69 +1,40 @@
-import React from "react";
-import img from "../assets/goldResize.jpg";
-import img2 from "../assets/limeFlowersResize2.jpg";
-import img3 from "../assets/purpleResize.jpg";
-import img4 from "../assets/whiteFlowers.jpg";
-import img5 from "../assets/lime.jpg";
-import img6 from "../assets/orange.jpg";
-import img7 from "../assets/purpleRock.jpg";
-import img8 from "../assets/rainbow.jpg";
+import React, { useState, useEffect } from "react";
+import mobile from "../assets/mobileBackground.webp";
+import desktop from "../assets/desktopBackground.webp";
+import banner from "../assets/nailSalonBanner.jpg";
 
 const Hero = () => {
-  const openImage = (src) => {
-    window.open(src, "_blank");
+  const [bgImage, setBgImage] = useState(mobile);
+
+  const handleResize = () => {
+    if (window.innerWidth >= 700) {
+      setBgImage(desktop);
+    } else {
+      setBgImage(mobile);
+    }
   };
 
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div id="gallery" className="w-full h-full flex justify-center pt-10">
-      <div className="flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 gap-4 p-6">
-        <img
-          src={img}
-          onClick={() => openImage(img)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Gold Nails"
-        />
-        <img
-          src={img2}
-          onClick={() => openImage(img2)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Lime Flowers"
-        />
-        <img
-          src={img3}
-          onClick={() => openImage(img3)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Purple"
-        />
-        <img
-          src={img4}
-          onClick={() => openImage(img4)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="White Flowers"
-        />
-        <img
-          src={img5}
-          onClick={() => openImage(img5)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Lime"
-        />
-        <img
-          src={img6}
-          onClick={() => openImage(img6)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Orange"
-        />
-        <img
-          src={img7}
-          onClick={() => openImage(img7)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Purple Rock"
-        />
-        <img
-          src={img8}
-          onClick={() => openImage(img8)}
-          className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
-          alt="Rainbow"
-        />
+    <div
+      id="hero"
+      className="relative w-full h-screen flex justify-center items-center text-center pt-10 bg-center bg-no-repeat bg-fixed bg-cover"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div className="w-11/12 md:w-2/3 lg:w-1/2 relative z-10 text-white flex flex-col p-4">
+        <h1 className="text-5xl font-bold -translate-y-16 animate-fade-in-down">
+          Welcome to Mint Nails Studio
+        </h1>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const Pricing = () => {
         id="prices"
         className="flex flex-col justify-center items-center py-16"
       >
-        <h1 className=" text-[30px] md:text-[32px] roboto-slab-thin pb-8">
+        <h1 className="text-[30px] md:text-[32px] roboto-slab-thin pb-8">
           Pricing
         </h1>
         <div className="w-11/12 lg:w-9/12 h-full bg-white rounded-3xl  shadow-gray-600 shadow-xl px-4 py-8">
