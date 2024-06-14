@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative w-full h-screen flex justify-center items-center text-center pt-10 bg-center bg-no-repeat bg-fixed bg-cover"
+      className="relative w-full h-screen flex justify-center items-center text-center pt-10 bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}
