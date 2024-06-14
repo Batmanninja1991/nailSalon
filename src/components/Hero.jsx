@@ -21,19 +21,6 @@ const Hero = () => {
     };
   }, []);
 
-  const handleScroll = () => {
-    const parallaxElement = document.querySelector('.parallax::before');
-    const scrollPosition = window.scrollY;
-    parallaxElement.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <div
       id="hero"

@@ -7,6 +7,7 @@ import img5 from "../assets/lime.jpg";
 import img6 from "../assets/orange.jpg";
 import img7 from "../assets/purpleRock.jpg";
 import img8 from "../assets/rainbow.jpg";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Gallery = () => {
   const openImage = (src) => {
@@ -18,7 +19,7 @@ const Gallery = () => {
       <div>
         <h1 className="text-[30px] md:text-[32px] roboto-slab-thin pb-8">Gallery</h1>
       </div>
-      <div className="flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 gap-4 pb-6">
+      <div className="scrollbar-thiner flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 gap-4 pb-6">
         <img
           src={img}
           onClick={() => openImage(img)}
@@ -68,6 +69,7 @@ const Gallery = () => {
           alt="Rainbow"
         />
       </div>
+      <p className="flex justify-center items-center  gap-6 md:hidden">Scroll <AiOutlineArrowRight /></p>
     </div>
   );
 };
