@@ -42,7 +42,7 @@ const Hero = () => {
         backgroundImage: `url(${bgImage})`,
       }}
     >
-      <div className="absolute inset-x-0 inset-y-2 rounded-xl bg-black bg-opacity-60"></div>
+      <div className="absolute inset-x-0 inset-y-4 bg-black bg-opacity-60"></div>
       <div className="w-11/12 md:w-2/3 lg:w-1/2 relative z-10 text-white flex flex-col p-4">
         <h1 className="text-5xl font-bold -translate-y-16 animate-fade-in-down">
           Welcome to <br />Mint Nails Studio
