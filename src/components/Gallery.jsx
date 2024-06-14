@@ -20,7 +20,7 @@ const Gallery = () => {
       className="w-full h-full flex flex-col justify-center items-center pt-10"
     >
       <div>
-        <h1 className="text-[30px] md:text-[32px] roboto-slab-thin pb-8">
+        <h1 className="text-[32px] md:text-[34px] roboto-slab-thin pb-8 font-semibold">
           Gallery
         </h1>
       </div>
