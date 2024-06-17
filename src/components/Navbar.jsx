@@ -55,13 +55,13 @@ const Navbar = () => {
     <div className="w-full h-full">
       <div className="flex justify-between items-center w-full h-[100px] bg-white border-b border-black px-6">
         {openMenu ? (
-          <AiOutlineClose
+          <AiOutlineMenu
             size={30}
             onClick={handleClick}
             className="md:hidden"
           />
         ) : (
-          <AiOutlineMenu
+          <AiOutlineClose
             size={30}
             onClick={handleClick}
             className="md:hidden"
@@ -100,8 +100,8 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed top-[100px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-transform duration-500 z-50 ${
-          openMenu ? "transform translate-x-0" : "transform -translate-x-full"
+        className={`fixed top-[100px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-all duration-500 ease-in-out z-50 ${
+          openMenu ? "opacity-0" : "opacity-100"
         }`}
       >
         <ul className="flex flex-col items-center gap-6 p-6">

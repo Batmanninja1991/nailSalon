@@ -5,7 +5,8 @@ import { AiOutlineTrademark } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="w-full h-full bg-black text-pink-200">
-      <div>
+      <div className="p-4">
+        {/*
         <div className="py-6 twist">
           <h1 className="flex justify-center items-center text-[40px] font-mono tracking-tighter">
             Contact Us
@@ -35,27 +36,28 @@ const Footer = () => {
           </div>
         </div>
         <hr className="border-pink-200 border-2" />
+        */}
         <div className="flex flex-col items-center justify-center text-xl gap-16 py-16 font-medium font-mono tracking-tighter">
           <a
-            href="https://www.google.com/maps"
+            href="https://www.google.com/maps/place/Portland,+OR/@45.5425955,-122.8192068,11z/data=!3m1!4b1!4m6!3m5!1s0x54950b0b7da97427:0x1c36b9e6f6d18591!8m2!3d45.515232!4d-122.6783853!16s%2Fm%2F02frhbc?entry=ttu"
             target="_blank"
             className="hover:text-white"
           >
-            <p>1234 Main St.</p>
+            <p>Portland, Oregon</p>
           </a>
           <a
-            href="tel:503-999-9999"
+            href="tel:949-338-1743"
             target="_blank"
             className="hover:text-white"
           >
-            <p>503-999-9999</p>
+            <p>949-338-1743</p>
           </a>
           <a
-            href="mailto:YourEmail@gmail.com"
+            href="mailto:rylocan2@gmail.com"
             target="_blank"
             className="hover:text-white"
           >
-            <p>YourEmail@gmail.com</p>
+            <p>rylocan2@gmail.com</p>
           </a>
         </div>
         <hr className="border-pink-200 border-1" />
