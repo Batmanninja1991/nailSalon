@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiOutlineTrademark } from "react-icons/ai";
 
 const Footer = () => {
