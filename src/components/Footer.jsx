@@ -4,7 +4,7 @@ import { AiOutlineTrademark } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-black text-pink-200">
+    <div id="contact" className="w-full h-full bg-black text-pink-200">
       <div className="p-4">
         {/*
         <div className="py-6 twist">
