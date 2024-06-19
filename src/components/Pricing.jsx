@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 
 const Pricing = () => {
-  const [openMenu, setOpenMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -10,6 +9,10 @@ const Pricing = () => {
     email: "",
     service: "Full Set",
   });
+
+  const handleModal = () => {
+    setShowModal(!showModal);
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -46,7 +49,7 @@ const Pricing = () => {
     <div className="bg-violet-300">
       <div
         id="prices"
-        className="w-full h-full flex flex-col justify-center items-center pt-10"
+        className="w-full h-full flex flex-col justify-center items-center pt-16"
       >
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 pb-8">
           Pricing
@@ -78,10 +81,10 @@ const Pricing = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center items-center py-10">
+      <div className="flex justify-center items-center py-4">
         <button
-          onClick={() => setShowModal(true)}
-          className="rounded-2xl text-white bg-black px-6 py-4"
+          onClick={handleModal}
+          className="rounded-2xl text-white bg-black px-6 py-2"
         >
           Book Now
         </button>
