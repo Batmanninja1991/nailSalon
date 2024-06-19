@@ -5,7 +5,7 @@ const Pricing = () => {
     <div>
       <div
         id="prices"
-        className="flex flex-col justify-center items-center py-16"
+        className="w-full h-full flex flex-col justify-center items-center bg-violet-300 py-16"
       >
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 pb-8">
           Pricing
@@ -37,6 +37,7 @@ const Pricing = () => {
           </ul>
         </div>
       </div>
+      
     </div>
   );
 };
