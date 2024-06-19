@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineTrademark } from "react-icons/ai";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,24 +15,18 @@ const Footer = () => {
             id="contact"
             className="flex justify-center items-center gap-8 py-6"
           >
-            <a target="_blank" href="https://facebook.com/">
-              <FaFacebook
-                size={60}
-                className="text-blue-600 hover:text-blue-500 hover:scale-125"
-              />
-            </a>
-            <a target="_blank" href="https://instagram.com/mintnailzstudio">
-              <FaInstagram
-                size={60}
-                className="text-red-500 hover:text-red-400 hover:scale-125"
-              />
-            </a>
-            <a target="_blank" href="https://twitter.com/">
-              <FaTwitter
-                size={60}
-                className="text-blue-500 hover:text-blue-400 hover:scale-125"
-              />
-            </a>
+            <a target="_blank" href="https://instagram.com/mintnailzstudio" rel="noopener noreferrer">
+        <FaInstagram
+          size={60}
+          className="text-pink-600 hover:text-pink-500 hover:scale-110 transition-transform duration-300"
+        />
+      </a>
+      <a target="_blank" href="https://www.youtube.com/@Melodymintnailstudio" rel="noopener noreferrer">
+        <FaYoutube
+          size={60}
+          className="text-red-600 hover:text-red-500 hover:scale-110 transition-transform duration-300"
+        />
+      </a>
           </div>
         </div>
         <hr className="border-pink-200 border-2" />
