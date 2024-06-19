@@ -187,10 +187,10 @@ const Navbar = () => {
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg"
                   required
                 >
-                  <option value="Full Set">Full Set</option>
-                  <option value="Fill">Fill</option>
-                  <option value="Dipping Full Set">Dipping Full Set</option>
-                  <option value="Custom Full Set">Custom Full Set</option>
+                  <option value="Full Set">Nail Art Press Ons</option>
+                  <option value="Fill">French Tips</option>
+                  <option value="Dipping Full Set">Solid Press Ons</option>
+                  <option value="Custom Full Set">Sizing Kits</option>
                 </select>
               </div>
               <button
