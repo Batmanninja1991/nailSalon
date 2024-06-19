@@ -11,14 +11,6 @@ const Pricing = () => {
     service: "Full Set",
   });
 
-  const handleClick = () => {
-    setOpenMenu(!openMenu);
-  };
-
-  const handleCloseMenu = () => {
-    setOpenMenu(false);
-  };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -54,7 +46,7 @@ const Pricing = () => {
     <div className="bg-violet-300">
       <div
         id="prices"
-        className="w-full h-full flex flex-col justify-center items-center pt-16"
+        className="w-full h-full flex flex-col justify-center items-center pt-10"
       >
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 pb-8">
           Pricing
@@ -86,10 +78,10 @@ const Pricing = () => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center items-center py-4">
+      <div className="flex justify-center items-center py-10">
         <button
           onClick={() => setShowModal(true)}
-          className="rounded-2xl text-white bg-black px-6 py-2"
+          className="rounded-2xl text-white bg-black px-6 py-4"
         >
           Book Now
         </button>
