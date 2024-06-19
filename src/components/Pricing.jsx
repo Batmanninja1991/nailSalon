@@ -7,32 +7,33 @@ const Pricing = () => {
         id="prices"
         className="flex flex-col justify-center items-center py-16"
       >
-        <h1 className="text-[32px] md:text-[34px] roboto-slab-thin pb-8 font-semibold">
+        <h1 className="text-4xl md:text-5xl font-semibold text-gray-800 pb-8">
           Pricing
         </h1>
-        <div className="w-11/12 lg:w-9/12 h-full bg-white rounded-3xl  shadow-gray-600 shadow-xl px-4 py-8">
-          <ul className="grid grid-cols-2 py-1">
-            <li className="text-xl pt-4 pb-4 pl-4 text-left">
-              Nail Art Press Ons
-              <span className="text-sm">
-                <br />( includes charms and 3D art )
+        <div className="w-11/12 lg:w-8/12 bg-white rounded-3xl shadow-lg p-8">
+          <ul className="divide-y divide-gray-200">
+            <li className="flex justify-between items-center py-4 text-xl">
+              <span className="text-gray-700">
+                Nail Art Press Ons
+                <br />
+                <span className="text-gray-500 text-sm">
+                  (includes charms and 3D art)
+                </span>
               </span>
+              <span className="text-gray-800 font-bold">$70</span>
             </li>
-            <li className="text-xl pt-4 pb-4 pr-4 pl-[1px] text-right">$70</li>
-          </ul>
-          <ul className="grid grid-cols-2 py-1">
-            <li className="text-xl pt-4 pb-4 pl-4 text-left">French Tips</li>
-            <li className="text-xl pt-4 pb-4 pr-4 pl-[1px] text-right">$55</li>
-          </ul>
-          <ul className="grid grid-cols-2 py-1">
-            <li className="text-xl pt-4 pb-4 pl-4 text-left">
-              Solid Press Ons
+            <li className="flex justify-between items-center py-4 text-xl">
+              <span className="text-gray-700">French Tips</span>
+              <span className="text-gray-800 font-bold">$55</span>
             </li>
-            <li className="text-xl pt-4 pb-4 pr-4 pl-[1px] text-right">$40</li>
-          </ul>
-          <ul className="grid grid-cols-2 py-1">
-            <li className="text-xl pt-4 pb-4 pl-4 text-left">Sizing Kits</li>
-            <li className="text-xl pt-4 pb-4 pr-4 pl-[1px] text-right">$10</li>
+            <li className="flex justify-between items-center py-4 text-xl">
+              <span className="text-gray-700">Solid Press Ons</span>
+              <span className="text-gray-800 font-bold">$40</span>
+            </li>
+            <li className="flex justify-between items-center py-4 text-xl">
+              <span className="text-gray-700">Sizing Kits</span>
+              <span className="text-gray-800 font-bold">$10</span>
+            </li>
           </ul>
         </div>
       </div>
