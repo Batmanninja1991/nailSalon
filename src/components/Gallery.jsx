@@ -26,7 +26,7 @@ const Gallery = () => {
       </div>
       <div className="scrollbar-thiner flex w-11/12 overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 gap-4 pb-6">
         <img
-          src={img}
+          src={img8}
           onClick={() => openImage(img)}
           className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Gold Nails"
@@ -68,7 +68,7 @@ const Gallery = () => {
           alt="Purple Rock"
         />
         <img
-          src={img8}
+          src={img}
           onClick={() => openImage(img8)}
           className="lg:max-w-[500px] max-w-[400px] h-auto rounded-xl border-black border-2 cursor-pointer"
           alt="Rainbow"

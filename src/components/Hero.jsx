@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import bgImg from "../assets/purpleRock.jpg";
+import bgImg from "../assets/goldResize.jpg";
 import bgImgDesktop from "../assets/bgImg-2.png";
 
 const Hero = () => {
