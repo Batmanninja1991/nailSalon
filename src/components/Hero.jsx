@@ -25,11 +25,12 @@ const Hero = () => {
   return (
     <div id="hero" className="w-full h-full flex justify-center items-center">
       <div
-        className="relative w-11/12 h-[650px] flex justify-center items-center text-center bg-no-repeat bg-cover bg-center lg:bg-bottom rounded-xl"
+        className="hidden relative w-full h-[650px] text-center bg-no-repeat bg-cover bg-center lg:bg-bottom"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
       ></div>
+      <img src={backgroundImage} className="w-full h-screen" />
     </div>
   );
 };
