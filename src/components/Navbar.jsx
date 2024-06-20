@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="flex justify-between items-center w-full h-[70px] bg-white border-b border-black px-6">
+      <div className="flex justify-between items-center w-full h-[70px] bg-white border-b border-black px-10">
         {openMenu ? (
           <AiOutlineClose
             size={30}
@@ -67,7 +67,7 @@ const Navbar = () => {
             className="md:hidden"
           />
         )}
-        <h1 className="md:hidden text-pink-400 text-[36px] leading-none text-center caveat">
+        <h1 className=" text-pink-400 text-[38px] leading-none text-center caveat">
           Mint Nails Studio
         </h1>
         <ul className="hidden md:flex gap-2 md:text-[18px] roboto-slab-thin">
@@ -94,13 +94,13 @@ const Navbar = () => {
         </ul>
         <button
           onClick={() => setShowModal(true)}
-          className="rounded-2xl text-white bg-black px-6 py-2"
+          className="rounded-2xl text-black font-semibold bg-pink-300 px-6 py-2"
         >
           Book Now
         </button>
       </div>
       <div
-        className={`fixed top-[100px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-all duration-500 ease-in-out z-50 ${
+        className={`fixed top-[70px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-all duration-500 ease-in-out z-50 ${
           openMenu ? "opacity-100" : "opacity-0"
         }`}
       >

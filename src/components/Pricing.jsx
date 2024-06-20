@@ -84,7 +84,7 @@ const Pricing = () => {
       <div className="flex justify-center items-center py-4">
         <button
           onClick={handleModal}
-          className="rounded-2xl text-white bg-black px-6 py-2"
+          className="rounded-2xl text-white bg-black px-6 py-2 my-4"
         >
           Book Now
         </button>
