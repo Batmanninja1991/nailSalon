@@ -53,7 +53,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="flex justify-between items-center w-full h-[70px] bg-white border-b border-black px-10">
+      <div className="flex justify-between items-center w-full h-[70px] bg-white border-b border-black px-2 lg:px-10">
         {openMenu ? (
           <AiOutlineClose
             size={30}
