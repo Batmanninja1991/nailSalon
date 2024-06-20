@@ -70,7 +70,7 @@ const Navbar = () => {
         <h1 className=" text-pink-400 text-[26px] lg:text-[38px] leading-none text-center caveat">
           Mint Nails Studio
         </h1>
-        <ul className="hidden md:flex gap-2 md:text-[20px] roboto-slab-thin">
+        <ul className="hidden md:flex gap-2 md:text-[24px] roboto-slab-thin">
           <a href="#">
             <li onClick={handleCloseMenu} className="rounded-full py-2 px-6">
               Home
