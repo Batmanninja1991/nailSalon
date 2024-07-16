@@ -68,9 +68,11 @@ const Navbar = () => {
             className="md:hidden"
           />
         )}
-        <img src={logo} className="w-[300px] h-[200px]" />
-        <ul className="hidden md:flex justify-center items-center gap-2 md:text-[18px] roboto-slab-thin">
-          <a href="#">
+        <a href="https://mintnaildesign.davidshawwebdesign.com/">
+          <img src={logo} className="w-[250px] h-[175px]" />
+        </a>
+        <ul className="hidden md:flex justify-center items-center text-center gap-2 md:text-[18px] roboto-slab-thin">
+          <a href="https://mintnaildesign.davidshawwebdesign.com/">
             <li onClick={handleCloseMenu} className="rounded-full py-2 px-6">
               Home
             </li>
@@ -99,7 +101,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed top-[70px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-all duration-500 ease-in-out z-50 ${
+        className={`fixed top-[100px] left-0 w-full md:w-1/2 bg-white border-b border-black transition-all duration-500 ease-in-out z-50 ${
           openMenu ? "opacity-100" : "opacity-0"
         }`}
       >

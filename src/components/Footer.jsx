@@ -1,6 +1,6 @@
 import React from "react";
-import { AiOutlineTrademark } from "react-icons/ai";
-import { FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -31,33 +31,43 @@ const Footer = () => {
         </div>
         <hr className="border-pink-200 border-2" />
         */}
-        <div className="flex flex-col items-center justify-center text-xl gap-16 py-16 font-medium font-mono tracking-tighter">
-          <a
-            href="https://www.google.com/maps/place/Portland,+OR/@45.5425955,-122.8192068,11z/data=!3m1!4b1!4m6!3m5!1s0x54950b0b7da97427:0x1c36b9e6f6d18591!8m2!3d45.515232!4d-122.6783853!16s%2Fm%2F02frhbc?entry=ttu"
-            target="_blank"
-            className="hover:text-white"
-          >
-            <p>Portland, Oregon</p>
-          </a>
-          <a
-            href="tel:949-338-1743"
-            target="_blank"
-            className="hover:text-white"
-          >
-            <p>949-338-1743</p>
-          </a>
-          <a
-            href="mailto:rylocan2@gmail.com"
-            target="_blank"
-            className="hover:text-white"
-          >
-            <p>rylocan2@gmail.com</p>
-          </a>
+        <div className="flex justify-center items-center gap-10">
+          <div className="flex flex-col items-center justify-center text-2xl gap-14 py-16">
+            <FaMapMarkerAlt />
+            <FaPhoneAlt />
+            <MdAlternateEmail />
+          </div>
+          <div className="flex flex-col justify-center text-xl gap-14 py-16 font-medium font-mono tracking-tighter">
+            <a
+              href="https://www.google.com/maps/place/Portland,+OR/@45.5425955,-122.8192068,11z/data=!3m1!4b1!4m6!3m5!1s0x54950b0b7da97427:0x1c36b9e6f6d18591!8m2!3d45.515232!4d-122.6783853!16s%2Fm%2F02frhbc?entry=ttu"
+              target="_blank"
+              className="hover:text-white"
+            >
+              <p>Portland, Oregon</p>
+            </a>
+            <a
+              href="tel:949-338-1743"
+              target="_blank"
+              className="hover:text-white"
+            >
+              <p>949-338-1743</p>
+            </a>
+            <a
+              href="mailto:rylocan2@gmail.com"
+              target="_blank"
+              className="hover:text-white"
+            >
+              <p>rylocan2@gmail.com</p>
+            </a>
+          </div>
         </div>
         <hr className="border-pink-200 border-1" />
-        <div className="flex items-center justify-center gap-1 py-4 font-mono tracking-tighter">
-          <p>All Rights Reserved</p>
-          <AiOutlineTrademark size={15} />
+        <div className="flex items-center text-center justify-center gap-1 py-4 font-mono tracking-tighter">
+          <p>
+            2024 Mint Nails Design &copy;
+            <br />
+            All rights reserved
+          </p>
         </div>
       </div>
     </div>
