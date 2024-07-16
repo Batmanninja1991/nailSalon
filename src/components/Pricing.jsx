@@ -27,7 +27,7 @@ const Pricing = () => {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nService: ${formData.service}`
     );
-    return `mailto:davidshaw68@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:rylocan2@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const handleFormSubmit = (e) => {
@@ -155,7 +155,7 @@ const Pricing = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  className="w-full px-4 py-2 bg-blue-500 text-white text-sm md:text-base rounded hover:bg-blue-600"
                 >
                   Book Appointment
                 </button>
@@ -163,15 +163,15 @@ const Pricing = () => {
               <div className="mt-4 flex justify-between">
                 <button
                   onClick={openInstagramApp}
-                  className="flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 mr-2"
+                  className="flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-sm md:text-base text-white rounded hover:bg-pink-600 mr-2"
                 >
-                  <FaInstagram className="mr-2" /> Open in App
+                  <FaInstagram className="mr-2" /> Instagram Mobile
                 </button>
                 <button
                   onClick={openInstagramWeb}
-                  className="flex items-center justify-center w-full px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 ml-2"
+                  className="flex items-center justify-center w-full px-4 py-2 bg-gray-500 text-sm md:text-base text-white rounded hover:bg-gray-600 ml-2"
                 >
-                  <FaInstagram className="mr-2" /> Open in Web
+                  <FaInstagram className="mr-2" /> Instagram Web
                 </button>
               </div>
               <button

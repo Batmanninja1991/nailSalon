@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
+import logo from "../assets/mnsLogoDesktop.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-full">
-      <div className="flex justify-between items-center w-full h-[70px] bg-white border-b border-black px-2 lg:px-10">
+      <div className="flex justify-between items-center w-full h-[100px] bg-white border-b border-black px-4 lg:px-10">
         {openMenu ? (
           <AiOutlineClose
             size={30}
@@ -67,10 +68,8 @@ const Navbar = () => {
             className="md:hidden"
           />
         )}
-        <h1 className="hidden md:flex text-pink-400 text-[40px] leading-none text-center caveat">
-          Mint Nails Studio
-        </h1>
-        <ul className="hidden md:flex gap-2 md:text-[18px] roboto-slab-thin">
+        <img src={logo} className="w-[300px] h-[200px]" />
+        <ul className="hidden md:flex justify-center items-center gap-2 md:text-[18px] roboto-slab-thin">
           <a href="#">
             <li onClick={handleCloseMenu} className="rounded-full py-2 px-6">
               Home
@@ -195,7 +194,7 @@ const Navbar = () => {
               </div>
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                className="w-full px-4 py-2 bg-blue-500 text-white text-sm md:text-base rounded hover:bg-blue-600"
               >
                 Book Appointment
               </button>
@@ -203,15 +202,15 @@ const Navbar = () => {
             <div className="mt-4 flex justify-between">
               <button
                 onClick={openInstagramApp}
-                className="flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600 mr-2"
+                className="flex items-center justify-center w-full px-4 py-2 bg-pink-500 text-sm md:text-base text-white rounded hover:bg-pink-600 mr-2"
               >
-                <FaInstagram className="mr-2" /> Open in App
+                <FaInstagram className="mr-2" /> Instagram Mobile
               </button>
               <button
                 onClick={openInstagramWeb}
-                className="flex items-center justify-center w-full px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 ml-2"
+                className="flex items-center justify-center w-full px-4 py-2 bg-gray-500 text-sm md:text-base text-white rounded hover:bg-gray-600 ml-2"
               >
-                <FaInstagram className="mr-2" /> Open in Web
+                <FaInstagram className="mr-2" /> Instagram Web
               </button>
             </div>
             <button
