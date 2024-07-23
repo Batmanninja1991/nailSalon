@@ -1,8 +1,17 @@
-# React + Vite
+<h1>Nail Salon Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern and elegant nail salon website designed to showcase the services, portfolio, and contact information of a nail salon. The website is built with cutting-edge web technologies to provide a smooth and attractive user experience.
 
-Currently, two official plugins are available:
+<h2>Features</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>Home page with an overview of the salon and its services.<br/>Services page detailing various nail services offered.<br/>Gallery page showcasing nail art and designs.<br/>About Us page with salon history and team members.<br/>Contact page with a contact form.<br/>Responsive design for mobile, tablet, and desktop devices.<br/>SEO optimized.<br/>Fast loading times</p>
+
+<h2>Technologies Used</h2>
+
+<p>Front-end: React, Tailwind CSS</p>
+<p>Build Tool: Vite</p>
+<p>Deployment: Hostinger</p>
+
+<h3>Contact</h3>
+
+David Shaw - @davidshawwebdesign - davidshawwebdesign@gmail.com
